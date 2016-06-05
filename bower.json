@@ -1,0 +1,21 @@
+{
+  "name": "jam",
+  "description": "Find local jams.",
+  "main": "",
+  "authors": [
+    "Nicholas Buhay <nbuhay@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nbuhay/jam",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
