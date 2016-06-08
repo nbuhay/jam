@@ -1,16 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p #{subTitle}
+  .page-header 
+    h1= title
+    p #{subTitle}
   .row
     .col-xs-12.col-sm-2
-      p Jam List
-      p Jam01
-      p Jam02
+      p #{jam}
     .col-xs-12.col-sm-8
-      p Map
+      p #{map}
     .col-xs-12.col-sm-2
-      p Picture
-      p User
-      p Info
+      p #{accountInfo.picture}
+      p #{accountInfo.name}
+      p #{accountInfo.info}
