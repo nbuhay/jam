@@ -6,7 +6,11 @@ block content
     p #{subTitle}
   .row
     .col-xs-12.col-sm-2
-      p #{jam}
+      p #{jams.title}
+      each event in jams.events
+        p Host: #{event.host}
+        p Type: #{event.type}
+        p Zip: #{event.zip}
     .col-xs-12.col-sm-8
       p #{map}
     .col-xs-12.col-sm-2

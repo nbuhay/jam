@@ -5,7 +5,21 @@ module.exports.home = function(req, res) {
   res.render('index', { 
     title: 'Welcome', 
     subTitle: 'Hyoshi - Natural Rhythm',
-    jam: 'Jam Listings',
+    jams: {
+      title: 'Jam Listings',
+      events: [
+        {
+          host: 'Nicholas',
+          type: 'Songwriting',
+          zip: '33637'
+        },
+        {
+          host: 'Aaron',
+          type: 'Practice',
+          zip: '19525'
+        }
+      ]
+    },
     map: 'Map of Jams',
     accountInfo: {
       picture: 'Picture Holder',
