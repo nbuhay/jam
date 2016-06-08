@@ -1,4 +1,14 @@
 extends layout
 
 block content
-    div.btn.btn-primary Login
+    .row
+      .col-xs-12
+        form(action='/' method='get')
+          h1 Hyoshi
+          div
+            input(type='text' name='accountName' value='Email')
+          div
+            input(type='text' name='accountPswd' value='Password')
+          div
+            input.btn.btn-primary(type='submit' value='Login')
+        div.btn.btn-primary Sign in with Google+
