@@ -2,7 +2,7 @@ extends layout
 
 block content
     .row
-      .col-xs-12
+      .col-xs-12#loginBox
         form(action='/' method='get')
           h1 #{title}
           div
@@ -10,5 +10,5 @@ block content
           div
             input(type='text' name='accountPswd' value='Password')
           div
-            input.btn.btn-primary(type='submit' value='Login')
-        div.btn.btn-primary Sign in with Google+
+            input.btn.btn-primary.loginBoxBtn(type='submit' value='Login')
+          div.btn.btn-primary.loginBoxBtn Sign in with Google+

@@ -4,7 +4,7 @@ var express = require('express');
 module.exports.home = function(req, res) {
   res.render('index', { 
     title: 'Welcome', 
-    subTitle: 'Hyoshi - Natural Rhythm',
+    subTitle: 'Padawan Nicholas',
     jams: {
       title: 'Jam Listings',
       events: [

@@ -1,0 +1,14 @@
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#loginBox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.loginBoxBtn {
+    width: 100%;
+    margin-top: 10px;
+}
