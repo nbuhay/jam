@@ -1,19 +1,39 @@
 extends layout
 
 block content
-  .page-header 
-    h1= title
-    p #{subTitle}
+  .row.page-header 
+    .col-xs-12.col-sm-3
+      h1= title
+      p #{subTitle}
+      div#usrImg
+    .col-xs-12.col-sm-9
+      .row
+        h2 Friends
+        #friendList
+          each friend in accountInfo.friends
+            div
+              p #{friend.picture}
+              p #{friend.name}
+              p #{friend.online}
   .row
-    .col-xs-12.col-sm-2
+    .col-xs-12.col-sm-3
+      h2 Current Jams
       p #{jams.title}
       each event in jams.events
         p Host: #{event.host}
         p Type: #{event.type}
         p Zip: #{event.zip}
-    .col-xs-12.col-sm-8
-      p #{map}
+    .col-xs-12.col-sm-7
+      h2 Jam Map
+      img(src='https://maps.googleapis.com/maps/api/staticmap?size=400x400&center=Temple+Terrace,FL&zoom=13')
     .col-xs-12.col-sm-2
-      p #{accountInfo.picture}
+      h2 Preferences
       p #{accountInfo.name}
       p #{accountInfo.info}
+      ul
+        each instrument in accountInfo.instruments
+          li
+            div
+              p #{instrument.instrument}
+              p Rating: #{instrument.selfRating}
+              p Comunity: #{instrument.communityRating}

@@ -22,9 +22,40 @@ module.exports.home = function(req, res) {
     },
     map: 'Map of Jams',
     accountInfo: {
-      picture: 'Picture Holder',
+      picture: 'PictureHolderNicholas',
       name: 'Nicholas',
-      info: 'Guitar'
+      instruments: [
+        {
+          instrument: 'Guitar',
+          selfRating: 'Intermediate',
+          communityRating: 'Intermediate'
+        },
+        {
+          instrument: 'Piano',
+          selfRating: 'Beginner',
+          communityRating: 'Beginner'
+        },
+        {
+          instrument: 'Bass',
+          selfRating: 'Beginner',
+          communityRating: 'Intermediate'
+        }
+      ],
+      friends: [
+        {
+          picture: 'PictureHolderAaron',
+          name: 'Aaron',
+          info: 'Piano',
+          online: 'True'
+        },
+        {
+          picture: 'PictureHolderAnt',
+          name: 'Ant',
+          info: 'Synth',
+          online: 'False'
+        }
+        
+      ]
     }
   });
 };

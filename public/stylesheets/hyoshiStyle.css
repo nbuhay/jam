@@ -1,4 +1,4 @@
-h1 {
+h1, h2, h3 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -11,4 +11,16 @@ h1 {
 .loginBoxBtn {
     width: 100%;
     margin-top: 10px;
+}
+
+#usrImg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(https://lh3.googleusercontent.com/-GCcZ-1OoNrE/Vp7aJoEiLHI/AAAAAAAAAjg/poI8pkQANoU2BWc7n-O0953EEYs-s9MgACKgB/w140-h139-p/IMG954388.jpg);
+}
+
+#friendList {
+    display: flex;
+    justify-content: space-around;
 }
