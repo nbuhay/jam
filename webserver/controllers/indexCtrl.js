@@ -9,14 +9,20 @@ module.exports.home = function(req, res) {
       title: 'Jam Listings',
       events: [
         {
+          goal: 'Songwriting',
           host: 'Nicholas',
-          type: 'Songwriting',
-          zip: '33637'
+          geoLocation: '33637',
+          description: 'Want to write a new song!',
+          capacity: 4,
+          picture: 'JamPicSongwritingPlaceHolder'
         },
         {
+          goal: 'Practice',
           host: 'Aaron',
-          type: 'Practice',
-          zip: '19525'
+          geoLocation: '19525',
+          description: 'Need to work on chops.',
+          capacity: 2,
+          picture: 'JamPicPracticePlaceHolder'
         }
       ]
     },
@@ -26,17 +32,21 @@ module.exports.home = function(req, res) {
       name: 'Nicholas',
       instruments: [
         {
-          instrument: 'Guitar',
+          category: 'Guitar',
+          subCategory: 'Electric',
+          picture: 'GuitarPictureHolder',
           selfRating: 'Intermediate',
           communityRating: 'Intermediate'
         },
         {
-          instrument: 'Piano',
+          category: 'Piano',
+          picture: 'PianoPictureHolder',
           selfRating: 'Beginner',
           communityRating: 'Beginner'
         },
         {
-          instrument: 'Bass',
+          category: 'Bass',
+          picture: 'BassPictureHolder',
           selfRating: 'Beginner',
           communityRating: 'Intermediate'
         }
