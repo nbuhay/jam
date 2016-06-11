@@ -40,3 +40,5 @@ process.on('SIGTERM', function() {
 });
 
 require('./users');
+require('./jamLocations');
+require('./instruments');

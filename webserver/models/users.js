@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 
 var userSchema = new mongoose.Schema({
-    picture: String,
     name: {
         type: String,
         required: true
@@ -14,8 +13,28 @@ var userSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    instruments: ['String'],
-    friends: ['String'],
-    jamHistory: ['String'],
-    favoriteAlbums: ['String']
+    picture: String,
+    instruments: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Instrument'
+        }
+    ],
+    friends: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User'
+        }
+    ],
+    jamHistory: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'JamLocation'
+        }
+    ],
+    favoriteAlbums: [String],
+    spotifyLink: String,
+    soundCloudLink: String
 });
+
+var User = mongoose.model('User', userSchema);
