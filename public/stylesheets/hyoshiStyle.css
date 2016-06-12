@@ -24,3 +24,9 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-around;
 }
+
+.jamEvent {
+    border: 1px solid grey;
+    padding: 7.5px;
+    margin-top: 5px;
+}

@@ -17,16 +17,16 @@ block content
               p #{friend.online}
   .row
     .col-xs-12.col-sm-3
-      h2 Current Jams
-      p #{jams.title}
+      h2 #{jams.title}
       each event in jams.events
-        p= event.picture
-        p Goal: #{event.goal}
-        p Host: #{event.host}
-        p Type: #{event.type}
-        p Zip: #{event.geoLocation}
-        p Description: #{event.description}
-        p Capacity: #{event.capacity}
+        .jamEvent
+          p= event.picture
+          p Goal: #{event.goal}
+          p Host: #{event.host}
+          p Type: #{event.type}
+          p Zip: #{event.geoLocation}
+          p Description: #{event.description}
+          p Capacity: #{event.capacity}
     .col-xs-12.col-sm-7
       h2 Jam Map
       img(src='https://maps.googleapis.com/maps/api/staticmap?size=400x400&center=Temple+Terrace,FL&zoom=13')

@@ -6,7 +6,7 @@ module.exports.home = function(req, res) {
     title: 'Welcome', 
     subTitle: 'Padawan Nicholas',
     jams: {
-      title: 'Jam Listings',
+      title: 'Current Jams',
       events: [
         {
           goal: 'Songwriting',
