@@ -11,7 +11,10 @@ module.exports.home = function(req, res) {
         {
           goal: 'Songwriting',
           host: 'Nicholas',
-          geoLocation: '33637',
+          geoLocation: {
+            type: 'point',
+            coordinates: ['28.027905', '-82.379457']
+          },
           description: 'Want to write a new song!',
           capacity: 4,
           picture: 'JamPicSongwritingPlaceHolder'
@@ -19,10 +22,22 @@ module.exports.home = function(req, res) {
         {
           goal: 'Practice',
           host: 'Aaron',
-          geoLocation: '19525',
-          description: 'Need to work on chops.',
+          geoLocation: {
+            type: 'point',
+            coordinates: ['28.018943', '-82.400372']
+          },          description: 'Need to work on chops.',
           capacity: 2,
           picture: 'JamPicPracticePlaceHolder'
+        },
+        {
+          goal: 'Blues Jam',
+          host: 'Bill',
+          geoLocation: {
+            type: 'point',
+            coordinates: ['28.043523', '-82.382605']
+          },
+          capacity: 3,
+          picture: 'BluesJamPicPlaceHolder'
         }
       ]
     },
