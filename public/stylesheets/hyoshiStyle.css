@@ -30,3 +30,9 @@ h1, h2, h3 {
     padding: 7.5px;
     margin-top: 5px;
 }
+
+#jamMap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
