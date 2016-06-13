@@ -11,6 +11,7 @@ module.exports.home = function(req, res) {
         {
           goal: 'Songwriting',
           host: 'Nicholas',
+          time: '1465842437',
           geoLocation: {
             type: 'point',
             coordinates: ['-82.379457', '28.027905']
@@ -22,6 +23,7 @@ module.exports.home = function(req, res) {
         {
           goal: 'Practice',
           host: 'Aaron',
+          time: '1465842479',
           geoLocation: {
             type: 'point',
             coordinates: ['-82.400372', '28.018943']
@@ -32,6 +34,7 @@ module.exports.home = function(req, res) {
         {
           goal: 'Blues Jam',
           host: 'Bill',
+          time: '1465842503',
           geoLocation: {
             type: 'point',
             coordinates: ['-82.382605', '28.043523']
