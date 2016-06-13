@@ -13,7 +13,7 @@ module.exports.home = function(req, res) {
           host: 'Nicholas',
           geoLocation: {
             type: 'point',
-            coordinates: ['28.027905', '-82.379457']
+            coordinates: ['-82.379457', '28.027905']
           },
           description: 'Want to write a new song!',
           capacity: 4,
@@ -24,7 +24,7 @@ module.exports.home = function(req, res) {
           host: 'Aaron',
           geoLocation: {
             type: 'point',
-            coordinates: ['28.018943', '-82.400372']
+            coordinates: ['-82.400372', '28.018943']
           },          description: 'Need to work on chops.',
           capacity: 2,
           picture: 'JamPicPracticePlaceHolder'
@@ -34,7 +34,7 @@ module.exports.home = function(req, res) {
           host: 'Bill',
           geoLocation: {
             type: 'point',
-            coordinates: ['28.043523', '-82.382605']
+            coordinates: ['-82.382605', '28.043523']
           },
           capacity: 3,
           picture: 'BluesJamPicPlaceHolder'
