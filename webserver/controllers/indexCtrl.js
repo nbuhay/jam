@@ -82,7 +82,6 @@ module.exports.home = function(req, res) {
           info: 'Synth',
           online: 'False'
         }
-        
       ]
     }
   });
