@@ -32,19 +32,6 @@ var userSchema = new mongoose.Schema({
             ref: 'JamLocation'
         }
     ],
-    iceBreakerQuestion: [
-        {
-            question: {
-                type: mongoose.Schema.Types.ObjectId,
-                ref: 'IceBreakerQuestion',
-                required: true
-            },
-            response: {
-                type: String,
-                required: true
-            }
-        }
-    ],
     favoriteAlbums: [String],
     spotifyLink: String,
     soundCloudLink: String
