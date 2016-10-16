@@ -1,0 +1,54 @@
+who
+
+	hobbyist musicians to learn from others
+
+		recording
+		songwriting
+		jam
+
+what
+
+	Website to help hobbist musicians build communities of interest in their areas
+
+		based on zen philosophies
+		focused on getting better
+			sensai
+			critical feedback
+
+---
+
+instruments and user objects
+
+prelude path with /api
+
+action | url path | params | crud
+create a user | /user | name email zip | POST   | hyoshi.com:5000/api/user
+delete a user | /user | email          | DELETE | hyoshi.com:5000/api/user
+update a user | /user | email value    | PUT    | hyoshi.com:5000/api/user/email/value
+get a user    | /user | email          | GET    | hyoshi.com:5000/api/user/email
+get all users | /user | NA             | GET    | hyoshi.com:5000/api/user
+
+create a icat | /icat      | icat           | POST   | hyoshi.com:5000/api/icat
+create a scat | /icat/scat | icat scat      | PUT    | hyoshi.com:5000/api/icat
+delete a scat | /icat/scat | icat scat      | DELETE | hyoshi.com:5000/api/icat
+get all icats | /icat      | NA             | GET    | hyoshi.com:5000/api/icat
+get all scats | /icat/scat | NA             | GET    | hyoshi.com:5000/api/icat/scat
+
+subdocument strategy
+
+almost same but need an additional parameter
+
+user adds scat    | /user/email/inst | email icat scat | POST   | hyoshi.com:5000/api/user/email/inst
+user deletes scat | /user/email/inst | email icat scat | DELETE | hyoshi.com:5000/api/user/email/inst
+
+DONT LEAVE REQUEST HANGING
+	status code and returned data must be sent
+
+	return one of three things
+		JSON object with data answering request
+		JSON object containing error data
+		JSON object containing null data
+
+KEEP MOGNO API DECOUPLED FROM SERVER
+	less complicated to dig out
+	allows for future use in other projects
