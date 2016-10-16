@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 require('./webserver/models/db');
 
 var routes = require('./webserver/routes/index');
+var routesDbApi = require('./dbApi/routes/index');
 var users = require('./webserver/routes/users');
 var account = require('./webserver/routes/account');
 
@@ -25,6 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/api', routesDbApi);
 app.use('/users', users);
 app.use('/account', account);
 
