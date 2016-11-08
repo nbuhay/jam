@@ -52,3 +52,5 @@ DONT LEAVE REQUEST HANGING
 KEEP MOGNO API DECOUPLED FROM SERVER
 	less complicated to dig out
 	allows for future use in other projects
+	
+user edits zip  | /user/email/ | email zip | PUT | hyoshi.com:5000/api/user/email?zip=33637

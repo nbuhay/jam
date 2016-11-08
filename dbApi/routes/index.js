@@ -5,6 +5,7 @@ var instCtrl = require('../controllers/instCtrl')
 
 // users
 router.get('/user', userCtrl.usersAll);
+router.post('/user', userCtrl.usersCreate);
 
 // instruments
 router.get('/inst', instCtrl.instAll);
