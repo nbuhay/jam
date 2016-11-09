@@ -4,8 +4,9 @@ var userCtrl = require('../controllers/userCtrl')
 var instCtrl = require('../controllers/instCtrl')
 
 // users
-router.get('/user', userCtrl.usersAll);
-router.post('/user', userCtrl.usersCreate);
+router.get('/user', userCtrl.getUsers);
+router.get('/user/:userId', userCtrl.getUser)
+router.post('/user', userCtrl.createUser);
 
 // instruments
 router.get('/inst', instCtrl.instAll);
