@@ -10,5 +10,6 @@ router.post('/user', userCtrl.createUser);
 
 // instruments
 router.get('/inst', instCtrl.instAll);
+router.get('/inst/:instId/pic', instCtrl.instPic);
 
 module.exports = router;

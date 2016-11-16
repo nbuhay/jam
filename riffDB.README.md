@@ -31,6 +31,9 @@ purpose
 			style
 			techniques
 			goes well with.... this other lick
+		WHY button
+			click and explains why sound choice
+			gives user sense of why not choices were made
 
 	user
 		username
@@ -43,13 +46,23 @@ purpose
 -----website needs:
 	user login/signup
 	about us
-	contact
+		intro
+		purpose
+		contact
 
 	riff creation kit
+		js library
 	riff search
+		fast
 	groups
 	playlists
 	frontpage
+		new
+		popular
+		genre
+		let the user build this
+		skill
+		playlists
 
 	how-to section
 		record your audio
@@ -59,9 +72,12 @@ purpose
 		how to use
 		how to find
 		practice lick
+		gear differences for a specific sound
+		its in the hands!
 		
 
 Future:
 	MIDI Support
+	Guitar Pro Support
 	Direct record to browser
 		maybe not possible?

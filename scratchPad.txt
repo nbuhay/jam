@@ -54,3 +54,12 @@ KEEP MOGNO API DECOUPLED FROM SERVER
 	allows for future use in other projects
 	
 user edits zip  | /user/email/ | email zip | PUT | hyoshi.com:5000/api/user/email?zip=33637
+
+
+always have request, response, status
+
+how to find subdocument?
+	find main document
+	search for sub
+		need another parameter
+	return only needed data, nothing superflous
